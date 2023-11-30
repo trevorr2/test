@@ -1,6 +1,7 @@
 const fetch = require('node-fetch');
 const { MongoClient } = require('mongodb');
 const schedule = require('node-schedule');
+require('dotenv').config();
 
 const uri = process.env.MONGODB_URI
 const url = 'https://api.llama.fi/overview/fees?excludeTotalDataChart=true&excludeTotalDataChartBreakdown=true&dataType=dailyFees';
