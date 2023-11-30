@@ -13,7 +13,7 @@ async function fetchTVLAndStoreInMongoDB() {
     const data = await response.json();
 
     const dbName = 'sandbox';
-    const collectionName = 'dailyTVL';
+    const collectionName = 'testTVL';
 
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     await client.connect();

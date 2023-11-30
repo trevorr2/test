@@ -12,7 +12,7 @@ async function fetchFeesAndStoreInMongoDB() {
     const data = await response.json();
 
     const dbName = 'sandbox';
-    const collectionName = 'dailyFees';
+    const collectionName = 'testFees';
 
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     await client.connect();
