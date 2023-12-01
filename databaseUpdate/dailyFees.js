@@ -11,8 +11,8 @@ async function fetchFeesAndStoreInMongoDB() {
     const response = await fetch(url);
     const data = await response.json();
 
-    const dbName = 'sandbox';
-    const collectionName = 'testFees';
+    const dbName = 'test';
+    const collectionName = 'dailyFeesTimelessOnline';
 
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
     await client.connect();
